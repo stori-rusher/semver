@@ -1,3 +1,4 @@
+// Package semver provides a simple struct for parsing version strings.
 package semver
 
 import (
@@ -14,6 +15,7 @@ func init() {
 	regex = regexp.MustCompile(pattern)
 }
 
+// SemanticVersion is a struct that represents the elements of a semantic version string.
 type SemanticVersion struct {
 	matched       bool
 	versionString string

@@ -53,7 +53,7 @@ func (s *SemanticVersion) ParseVersion() {
 	}
 }
 
-// New creates a new SemanticVersion from a string
+// FromString creates a new SemanticVersion from a string
 func FromString(version string) SemanticVersion {
 	return SemanticVersion{versionString: version}
 }
